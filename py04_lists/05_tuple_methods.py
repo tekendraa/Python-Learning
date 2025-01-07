@@ -13,6 +13,7 @@ print(type(a))
 
 no = a.count(45)
 print(no)
+print(len(a))
 
 #Tuple of tuples
 nested_tuple = ((1, 2, 3), ("a", "b", "c"), (True, False))
