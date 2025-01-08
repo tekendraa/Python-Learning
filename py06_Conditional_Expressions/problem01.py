@@ -3,7 +3,7 @@ marks2 = int(input("Enter your marks: "))
 marks3 = int(input("Enter your marks: "))
 
 # Check for total percentage
-total_percentage = (marks1 + marks2 + marks3) / 300
+total_percentage = (marks1 + marks2 + marks3) / 300 * 100
 
 if total_percentage >= 80:
     print("You have scored A grade.")
