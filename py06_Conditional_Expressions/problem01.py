@@ -1,11 +1,15 @@
-a1 = int(input("Enter number 1: "))
-a2 = int(input("Enter number 2: "))
-a3 = int(input("Enter number 3: "))
-a4 = int(input("Enter number 4: "))
+marks1 = int(input("Enter your marks: "))
+marks2 = int(input("Enter your marks: "))
+marks3 = int(input("Enter your marks: "))
 
-if(a1>a2 and a2>a3 and a3>a4):
-    print("Numbers are in decreasing order")
-elif(a1<a2 and a2<a3 and a3<a4):
-    print("Numbers are in increasing order")
-else:
-    print("Numbers are not in increasing or decreasing order")  
+# Check for total percentage
+total_percentage = (marks1 + marks2 + marks3) / 300
+
+if total_percentage >= 80:
+    print("You have scored A grade.")
+elif total_percentage >= 60 and total_percentage < 80:
+    print("You have scored B grade.")
+elif total_percentage >= 40 and total_percentage < 60:
+    print("You have scored C grade.")
+else :
+    print("You have scored D grade. Try again next time.")
